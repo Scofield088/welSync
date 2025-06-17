@@ -20,7 +20,7 @@ load_dotenv()
 def create_conversational_chain(vector_store):
     llm = ChatGroq(
         model_name="Llama3-8b-8192",
-        groq_api_key="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",
+        groq_api_key="your_api_key",
         streaming=True,
         callbacks=[StreamingStdOutCallbackHandler()],
         temperature=0.01,
@@ -70,7 +70,7 @@ def AudioToText():
 
 import google.generativeai as genai
 
-Google_API_Key = "AIzaSyB-D6eV5N5C-BjL_d0fmYZs5Xf2ZIhRvL0"
+Google_API_Key = "api_key"
 genai.configure(api_key=Google_API_Key)
 
 generation_config = {
@@ -138,7 +138,7 @@ genre_to_id = {
 BASE_URL = "https://api.themoviedb.org/3"
 IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"
 MOVIE_URL = "https://www.themoviedb.org/movie/"
-TMDB_API_KEY = "ec7142b23ac69a72d61782242a68377c"
+TMDB_API_KEY = "tmdb_api"
 
 def is_content_suitable(title, description):
     blacklist = ["porn", "pornhub", "sex", "nude", "erotic", "xxx", "strip", "adult"]
