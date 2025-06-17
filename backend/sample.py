@@ -6,7 +6,7 @@ def create_connection():
             host="wellsync-mini-project-103850.k.aivencloud.com",
             port=13292,
             user="avnadmin",
-            password="AVNS_ITMVp6Gm2dthkRGhjH5", 
+            password="your_password", 
             database="wellsync",
         )
         print("✅ Connected to database!")
